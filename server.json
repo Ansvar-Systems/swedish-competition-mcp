@@ -1,30 +1,37 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "eu.ansvar/swedish-competition-mcp",
-  "description": "Query Konkurrensverket (Swedish Competition Authority) decisions, merger control, and sector enforcement",
+  "description": "KKV (Konkurrensverket — Swedish Competition Authority) MCP server — competition decisions, merger control, and sector enforcement",
   "repository": {
     "url": "https://github.com/Ansvar-Systems/swedish-competition-mcp",
     "source": "github"
   },
   "homepage": "https://ansvar.eu",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "Apache-2.0",
   "keywords": [
-    "konkurrensverket",
-    "swedish-competition",
-    "antitrust",
-    "merger-control",
+    "competition",
     "sweden",
-    "mcp",
-    "ansvar"
+    "regulation",
+    "compliance",
+    "mcp"
   ],
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@ansvar/swedish-competition-mcp",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "transport": {
         "type": "stdio"
+      }
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@ansvar/swedish-competition-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "streamable-http",
+        "url": "https://mcp.ansvar.eu/swedish-competition/mcp"
       }
     }
   ]
